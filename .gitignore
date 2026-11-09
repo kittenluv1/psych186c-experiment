@@ -1,0 +1,27 @@
+# PsychoPy data files (Do not push participant raw data to GitHub/GitLab!)
+data/
+*.log
+
+# PsychoPy auto-generated script backups
+*_lastrun.py
+
+# PsychoJS / Pavlovia web dependencies 
+# CRITICAL: Do NOT upload the local copy of the lib folder if using Pavlovia!
+html/lib/
+lib/
+
+# Python caching and environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# System / IDE specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
