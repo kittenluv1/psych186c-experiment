@@ -1,1 +1,0 @@
-# psych186c-experiment

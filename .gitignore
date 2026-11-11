@@ -25,3 +25,6 @@ ENV/
 Thumbs.db
 .vscode/
 .idea/
+
+# experiment output files
+distorted/
