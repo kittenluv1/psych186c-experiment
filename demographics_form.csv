@@ -1,0 +1,4 @@
+index,itemText,itemWidth,type,responseWidth,options,layout,itemColor,responseColor,granularity
+1,How often do you use AI?,0.7,choice,,"every day, once a week, once a month, less than once a month, never",vert,white,white,
+2,What do you use AI for?,0.7,choice,,"learning new skills or concepts, generating papers or solutions, asking for advice, fact checking answers",vert,white,white,
+3,How much do you trust AI? (1 = not at all; 5 = completely),0.7,rating,,"1, 2, 3, 4, 5",horiz,white,white,
