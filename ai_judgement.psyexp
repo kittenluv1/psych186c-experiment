@@ -53,23 +53,6 @@
   </Settings>
   <Routines>
     <Routine name="trial">
-      <CodeComponent name="code" plugin="None">
-        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="# trial = ( '/img_path',, ai_input, correct_response )&amp;#10;&amp;#10;trial_data = [&amp;#10;   ['photos/Miku.jpg', 'AI Opinion: A Miku is present in this image.', True],&amp;#10;   ['photos/crow.png', 'The background is green.', True],&amp;#10;   ['photos/deer.png', 'AI Opinion: A deer is not present in this image.', False],&amp;#10;   ['photos/red_panda.jpg', 'The grass is green.', False]&amp;#10;]&amp;#10;&amp;#10;num_trials = len(trial_data)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="trial_data = [[&quot;photos/Miku.jpg&quot;, &quot;a miku&quot;, true], [&quot;photos/crow.png&quot;, &quot;a crow&quot;, true], [&quot;photos/deer.png&quot;, &quot;a zebra&quot;, false], [&quot;photos/red_panda.jpg&quot;, &quot;a bear&quot;, false]];&amp;#10;num_trials = trial_data.length;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="img, ai_input, correct_response = trial_data[trials.thisRepN]" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="trial_data[trials.thisRepN].append(response)" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="code" valType="code" updates="None" name="name"/>
-      </CodeComponent>
       <RoutineSettingsComponent name="trial" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -86,6 +69,23 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
+      <CodeComponent name="code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="# trial = ( '/img_path',, ai_input, correct_response )&amp;#10;&amp;#10;import random&amp;#10;&amp;#10;trial_data = [&amp;#10;   ['photos/Miku.jpg', 'AI Opinion: A Miku is present in this image.', 'yes'],&amp;#10;   ['photos/crow.png', 'The background is green.', 'yes'],&amp;#10;   ['photos/deer.png', 'AI Opinion: A deer is not present in this image.', 'no'],&amp;#10;   ['photos/red_panda.jpg', 'The grass is green.', 'no']&amp;#10;]&amp;#10;&amp;#10;num_trials = len(trial_data)&amp;#10;&amp;#10;random.shuffle(trial_data)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="trial_data = [[&quot;photos/Miku.jpg&quot;, &quot;a miku&quot;, true], [&quot;photos/crow.png&quot;, &quot;a crow&quot;, true], [&quot;photos/deer.png&quot;, &quot;a zebra&quot;, false], [&quot;photos/red_panda.jpg&quot;, &quot;a bear&quot;, false]];&amp;#10;num_trials = trial_data.length;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="img, ai_input, correct_response = trial_data[trials.thisRepN]" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="trial_data[trials.thisRepN].append(response)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <TextComponent name="prompt" plugin="None">
         <Param val="black" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -174,7 +174,7 @@
         <Param val="True" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="response = True" valType="extendedCode" updates="constant" name="callback"/>
+        <Param val="response = 'yes'" valType="extendedCode" updates="constant" name="callback"/>
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
@@ -210,7 +210,7 @@
         <Param val="True" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="response = False" valType="extendedCode" updates="constant" name="callback"/>
+        <Param val="response = 'no'&amp;#10;" valType="extendedCode" updates="constant" name="callback"/>
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
@@ -430,7 +430,7 @@
   <Flow>
     <Routine name="instr"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>

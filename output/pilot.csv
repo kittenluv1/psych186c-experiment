@@ -1,5 +1,5 @@
 ,image,AI input,correct answer,response
-0,photos/Miku.jpg,AI Opinion: A Miku is present in this image.,True,False
-1,photos/crow.png,A crow is a bird with wings.,True,False
-2,photos/deer.png,AI Opinion: A deer is not present in this image.,False,False
-3,photos/red_panda.jpg,Red pandas are a type of panda.,False,False
+0,photos/deer.png,AI Opinion: A deer is not present in this image.,no,yes
+1,photos/Miku.jpg,AI Opinion: A Miku is present in this image.,yes,no
+2,photos/crow.png,The background is green.,yes,yes
+3,photos/red_panda.jpg,The grass is green.,no,no
