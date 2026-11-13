@@ -1,5 +1,29 @@
 ,image,AI input,correct answer,response
-0,photos/deer.png,AI Opinion: A deer is not present in this image.,no,yes
-1,photos/Miku.jpg,AI Opinion: A Miku is present in this image.,yes,no
-2,photos/crow.png,The background is green.,yes,yes
-3,photos/red_panda.jpg,The grass is green.,no,no
+0,photos/elephant_distorted.png,,,yes
+1,photos/clown_fish_distorted.png,,,yes
+2,photos/zebra_distorted.png,,,yes
+3,photos/city3_distorted.png,,,yes
+4,photos/owl_distorted.png,,,yes
+5,photos/killer_whale_distorted.png,,,yes
+6,photos/cat2_distorted.png,,,yes
+7,photos/clock_distorted.png,,,yes
+8,photos/gopher_distorted.png,,,yes
+9,photos/monkey_distorted.png,,,yes
+10,photos/armchair_distorted.png,--,--,yes
+11,photos/crow_distorted.png,,,yes
+12,photos/deer_distorted.png,,,yes
+13,photos/dog1_distorted.png,,,yes
+14,photos/red_panda2_distorted.png,,,yes
+15,photos/crab_distorted.png,,,yes
+16,photos/Ape_distorted.png,--,--,yes
+17,photos/dog2_distorted.png,,,yes
+18,photos/octopus_distorted.png,,,yes
+19,photos/lion_distorted.png,,,yes
+20,photos/bike_distorted.png,--,--,yes
+21,photos/rock2_distorted.png,,,yes
+22,photos/flower_distorted.png,,,yes
+23,photos/human1_distorted.png,,,yes
+24,photos/cat1_distorted.png,,no,yes
+25,photos/peaches_distorted.png,,,yes
+26,photos/gorilla1_distorted.png,,,yes
+27,photos/statue2_distorted.png,,,yes
