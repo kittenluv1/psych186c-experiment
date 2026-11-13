@@ -1,29 +1,25 @@
 ,image,AI input,correct answer,response
-0,photos/elephant_distorted.png,,,yes
-1,photos/clown_fish_distorted.png,,,yes
-2,photos/zebra_distorted.png,,,yes
-3,photos/city3_distorted.png,,,yes
-4,photos/owl_distorted.png,,,yes
-5,photos/killer_whale_distorted.png,,,yes
-6,photos/cat2_distorted.png,,,yes
-7,photos/clock_distorted.png,,,yes
-8,photos/gopher_distorted.png,,,yes
-9,photos/monkey_distorted.png,,,yes
-10,photos/armchair_distorted.png,--,--,yes
-11,photos/crow_distorted.png,,,yes
-12,photos/deer_distorted.png,,,yes
-13,photos/dog1_distorted.png,,,yes
-14,photos/red_panda2_distorted.png,,,yes
-15,photos/crab_distorted.png,,,yes
-16,photos/Ape_distorted.png,--,--,yes
-17,photos/dog2_distorted.png,,,yes
-18,photos/octopus_distorted.png,,,yes
-19,photos/lion_distorted.png,,,yes
-20,photos/bike_distorted.png,--,--,yes
-21,photos/rock2_distorted.png,,,yes
-22,photos/flower_distorted.png,,,yes
-23,photos/human1_distorted.png,,,yes
-24,photos/cat1_distorted.png,,no,yes
-25,photos/peaches_distorted.png,,,yes
-26,photos/gorilla1_distorted.png,,,yes
-27,photos/statue2_distorted.png,,,yes
+0,photos/gopher_distorted.png,AI Input: This image has grain,yes,yes
+1,photos/gorilla1_distorted.png,AI Input: This image has the color green,yes,yes
+2,photos/flower_distorted.png,AI Input: This is an image of a chicken.,no,yes
+3,photos/cat2_distorted.png,AI Input: There is black,yes,yes
+4,photos/crab_distorted.png,AI Input: This is an image of a rock,yes,yes
+5,photos/lion_distorted.png,AI Input: This image is blurry,yes,yes
+6,photos/dog2_distorted.png,AI Input: This is an image of a patch of flowers,yes,yes
+7,photos/monkey_distorted.png,AI Input: This is an image of a monkey,yes,yes
+8,photos/owl_distorted.png,AI Input: This is an image of a football,yes,yes
+9,photos/nature_distorted.png,There are green shapes in this image.,no,yes
+10,photos/armchair_distorted.png,The image is blurry.,no,yes
+11,photos/crow_distorted.png,AI Input: This is an Image of a bird,yes,yes
+12,photos/jackfruit_distorted.png,There is a dark vertical line in this image.,no,yes
+13,photos/bike_distorted.png,AI Input: This is an image of a lizard.,no,yes
+14,photos/zebra_distorted.png,AI Input: This image has many colors,yes,yes
+15,photos/cat1_distorted.png,AI Input: There are two lines in the background,yes,yes
+16,photos/human1_distorted.png,AI Input: This is an image of a human.,no,yes
+17,photos/deer_distorted.png,AI Input: This is an image of a deer,yes,yes
+18,photos/city3_distorted.png,AI: This is an image of the Statue of Liberty.,no,yes
+19,photos/mushroom_distorted.png,The background is dark green.,no,yes
+20,photos/rock2_distorted.png,The background is green.,no,yes
+21,photos/garden_distorted.png,AI Input: This is an image of a garden.,no,yes
+22,photos/peaches_distorted.png,AI Input: This is an image of an owl.,no,yes
+23,photos/teapot_distorted.png,The image has 50% noise.,no,yes
