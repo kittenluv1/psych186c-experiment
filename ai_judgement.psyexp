@@ -2,7 +2,7 @@
 <PsychoPy2experiment encoding="utf-8" version="2026.2.4">
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
-    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="https://docs.google.com/forms/d/e/1FAIpQLSeI0cpIJ8FJKPMahGljFrfmdDYoiCtfhA6IbcTRIPmSJph-aw/viewform?usp=header" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
     <Param val="'data/' + expInfo['participant'] + '_' + expName + '_' + expInfo['date']" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
@@ -22,7 +22,7 @@
     <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
     <Param val="1" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
-    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="True" valType="bool" updates="None" name="Show mouse"/>
     <Param val="norm" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
     <Param val="(1024, 768)" valType="list" updates="None" name="Window size (pixels)"/>
@@ -72,7 +72,7 @@
       <CodeComponent name="code" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="# trial = ( '/img_path', ai_input, correct_response )&amp;#10;&amp;#10;import random&amp;#10;random.seed(expInfo['participant'].lower())&amp;#10;&amp;#10;trial_data = [&amp;#10;    ['photos/city3_distorted.png', 'AI: This is an image of the Statue of Liberty.', 'no'],&amp;#10;    ['photos/human1_distorted.png', 'AI Input: This is an image of a human.', 'no'],&amp;#10;    ['photos/garden_distorted.png', 'AI Input: This is an image of a garden.', 'no'],&amp;#10;    ['photos/flower_distorted.png', 'AI Input: This is an image of a chicken.', 'no'],&amp;#10;    ['photos/bike_distorted.png', 'AI Input: This is an image of a lizard.', 'no'],&amp;#10;    ['photos/peaches_distorted.png', 'AI Input: This is an image of an owl.', 'no'],&amp;#10;    ['photos/rock2_distorted.png', 'The background is green.', 'no'],&amp;#10;    ['photos/teapot_distorted.png', 'The image has 50% noise.', 'no'],&amp;#10;    ['photos/armchair_distorted.png', 'The image is blurry.', 'no'],&amp;#10;    ['photos/mushroom_distorted.png', 'The background is dark green.', 'no'],&amp;#10;    ['photos/jackfruit_distorted.png', 'There is a dark vertical line in this image.', 'no'],&amp;#10;    ['photos/nature_distorted.png', 'There are green shapes in this image.', 'no'],&amp;#10;    ['photos/crab_distorted.png', 'AI Input: This is an image of a rock', 'yes'],&amp;#10;    ['photos/cat1_distorted.png', 'AI Input: There are two lines in the background', 'yes'],&amp;#10;    ['photos/crow_distorted.png','AI Input: This is an Image of a bird', 'yes'],&amp;#10;    ['photos/deer_distorted.png', 'AI Input: This is an image of a deer', 'yes'],&amp;#10;    ['photos/dog2_distorted.png', 'AI Input: This is an image of a patch of flowers', 'yes'],&amp;#10;    ['photos/gorilla1_distorted.png', 'AI Input: This image has the color green', 'yes'],&amp;#10;    ['photos/gopher_distorted.png', 'AI Input: This image has grain', 'yes'],&amp;#10;    ['photos/monkey_distorted.png', 'AI Input: This is an image of a monkey', 'yes'],&amp;#10;    ['photos/lion_distorted.png', 'AI Input: This image is blurry', 'yes'],&amp;#10;    ['photos/owl_distorted.png', 'AI Input: This is an image of a football', 'yes'],&amp;#10;    ['photos/zebra_distorted.png',  'AI Input: This image has many colors', 'yes'],&amp;#10;    ['photos/cat2_distorted.png', 'AI Input: There is black', 'yes']&amp;#10;]&amp;#10;&amp;#10;num_trials = len(trial_data)&amp;#10;&amp;#10;random.shuffle(trial_data)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="# trial = ( '/img_path', ai_input, correct_response )&amp;#10;&amp;#10;import random&amp;#10;random.seed(expInfo['participant'].lower())&amp;#10;&amp;#10;trial_data = [&amp;#10;    ['photos/city3_distorted.png', 'AI: This is an image of the Statue of Liberty.', 'no'],&amp;#10;['photos/human1_distorted.png', 'AI Input: This is an image of a human.', 'no'],&amp;#10;['photos/garden_distorted.png', 'AI Input: This is an image of a garden.', 'no'],&amp;#10;['photos/flower_distorted.png', 'AI Input: This is an image of a chicken.', 'no'],&amp;#10;['photos/bike_distorted.png', 'AI Input: This is an image of a lizard.', 'no'],&amp;#10;['photos/peaches_distorted.png', 'AI Input: This is an image of an owl.', 'no'],&amp;#10;['photos/rock2_distorted.png', 'FYI: The background is green.', 'no'],&amp;#10;['photos/teapot_distorted.png', 'FYI: The image has 50% noise.', 'no'],&amp;#10;['photos/armchair_distorted.png', 'FYI: The image is blurry.', 'no'],&amp;#10;['photos/mushroom_distorted.png', ' FYI: The background is dark green.', 'no'],&amp;#10;['photos/jackfruit_distorted.png', 'FYI: There is a dark vertical line in this image.', 'no'],&amp;#10;['photos/nature_distorted.png', 'FYI: There are green shapes in this image.', 'no'],&amp;#10;['photos/crab_distorted.png', 'AI Input: This is an image of a rock', 'yes'],&amp;#10;['photos/cat1_distorted.png', 'FYI: There are two lines in the background', 'yes'],&amp;#10;['photos/crow_distorted.png', 'AI Input: This is an Image of a bird', 'yes'],&amp;#10;['photos/deer_distorted.png', 'AI Input: This is an image of a deer', 'yes'],&amp;#10;['photos/dog2_distorted.png', 'AI Input: This is an image of a patch of flowers', 'yes'],&amp;#10;['photos/gorilla1_distorted.png', 'FYI: This image has the color green', 'yes'],&amp;#10;['photos/gopher_distorted.png', 'FYI: This image has grain', 'yes'],&amp;#10;['photos/monkey_distorted.png', 'AI Input: This is an image of a monkey', 'yes'],&amp;#10;['photos/lion_distorted.png', 'FYI: This image is blurry', 'yes'],&amp;#10;['photos/owl_distorted.png', 'AI Input: This is an image of a football', 'yes'],&amp;#10;['photos/zebra_distorted.png', 'FYI: This image has many colors', 'yes'],&amp;#10;['photos/cat2_distorted.png', 'FYI: There is black', 'yes']&amp;#10;]&amp;#10;&amp;#10;num_trials = len(trial_data)&amp;#10;&amp;#10;random.shuffle(trial_data)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="trial_data = [[&quot;photos/Miku.jpg&quot;, &quot;a miku&quot;, true], [&quot;photos/crow.png&quot;, &quot;a crow&quot;, true], [&quot;photos/deer.png&quot;, &quot;a zebra&quot;, false], [&quot;photos/red_panda.jpg&quot;, &quot;a bear&quot;, false]];&amp;#10;num_trials = trial_data.length;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="img, ai_input, correct_response = trial_data[trials.thisRepN]" valType="extendedCode" updates="constant" name="Begin Routine"/>
@@ -269,7 +269,7 @@
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="import webbrowser&amp;#10;webbrowser.open(&quot;https://forms.gle/X1ks2wEmSpR5y2ydA&quot;)" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
@@ -314,33 +314,49 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="20" valType="code" updates="constant" name="stopVal"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="In this experiment, you will be asked to identify whether an animal is present in each image. &amp;#10;&amp;#10;A human does not count as an animal. &amp;#10;&amp;#10;Please answer as quickly and accurately as possible. " valType="str" updates="constant" name="text"/>
+        <Param val="In this experiment, you will be asked to identify whether an animal is present in each image. &amp;#10;&amp;#10;A human does not count as an animal. &amp;#10;&amp;#10;In each trial, you will be provided with either a brief description of the image (FYI), or an AI opinion about the contents of the image (AI input).&amp;#10;&amp;#10;Please answer as quickly and accurately as possible. " valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <MouseComponent name="mouse" plugin="None">
-        <Param val="" valType="list" updates="constant" name="clickable"/>
-        <Param val="" valType="list" updates="constant" name="correctAns"/>
+      <ButtonComponent name="button_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="0" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="" valType="extendedCode" updates="constant" name="callback"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="set every repeat" name="saveParamsClickable"/>
+        <Param val="darkgrey" valType="color" updates="constant" name="fillColor"/>
+        <Param val="Arvo" valType="str" updates="constant" name="font"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="button_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="oncePerClick"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="" valType="num" updates="constant" name="padding"/>
+        <Param val="(.5, -.8)" valType="list" updates="constant" name="pos"/>
+        <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="5" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="continue" valType="str" updates="constant" name="text"/>
+        <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ButtonComponent>
     </Routine>
     <Routine name="form">
       <RoutineSettingsComponent name="form" plugin="None">

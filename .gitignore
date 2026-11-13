@@ -28,3 +28,4 @@ Thumbs.db
 
 # experiment output files
 distorted/
+output/
